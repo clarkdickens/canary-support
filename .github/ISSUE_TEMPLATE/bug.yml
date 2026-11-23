@@ -1,0 +1,28 @@
+name: Report a bug
+description: Tell us about something that did not work as expected.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: This issue will be public. Please use fictional examples and omit real documents, emails, screenshots with personal details, and organization names.
+  - type: input
+    id: version
+    attributes:
+      label: Canary version
+      description: Find the version at the bottom of the Canary sidebar.
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: Operating system and version
+      placeholder: e.g. Windows 11 or macOS 15
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: What happened?
+      description: Include the steps, what you expected and what happened instead. Mention the Office app or file type if relevant.
+    validations:
+      required: true

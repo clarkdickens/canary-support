@@ -1,0 +1,14 @@
+name: Ask a question
+description: Get help using Canary or configuring it for a team.
+labels: [question]
+body:
+  - type: markdown
+    attributes:
+      value: Questions and replies are public. Use fictional examples and omit personal or company information.
+  - type: textarea
+    id: question
+    attributes:
+      label: What would you like to do?
+      description: Include your platform and Canary version if relevant.
+    validations:
+      required: true
